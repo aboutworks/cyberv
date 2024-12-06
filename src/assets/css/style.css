@@ -1,0 +1,26 @@
+:root{
+	--cyberv-header-height: 60px;
+	--cyberv-footer-height:2rem;
+	--cyberv-main-height:calc(100vh - var(--cyberv-header-height) - var(--cyberv-footer-height))
+}
+body,html{
+	height: 100vh;
+	width: 100vw;
+}
+body{
+	background-color: black;
+	padding: 0;margin:0;
+	background-image: url('@/statics/pngs/main.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100%;
+}
+header{
+	height:var(--cyberv-header-height);
+}
+main{
+	height: var(--cyberv-main-height);
+}
+footer{
+	height: var(--cyberv-footer-height);
+}

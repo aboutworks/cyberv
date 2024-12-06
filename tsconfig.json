@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "types": [
+      "webpack-env"
+    ],
+    "baseUrl": "./src",  // 设置 src 目录为基础目录
+    "paths": {
+      "@/*": ["./*"]  // @ 映射到 src 目录
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "src/types/api.d.ts"  // 确保包含类型声明文件
+, "src/main.js", "src/store/index.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
