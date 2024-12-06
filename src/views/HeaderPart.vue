@@ -5,7 +5,9 @@
   </nav> -->
 
 	<header>
-		<div style="flex: .2; padding-left:1rem;"></div>
+		<div style="flex: .2; padding-left:1rem;">
+			<ContralLeftForm></ContralLeftForm>
+		</div>
 		<div style="flex: .6;">CyberVisual</div>
 		<div style="flex: .2; padding-right:1rem;">
 			<contralRightForm></contralRightForm>
@@ -15,6 +17,7 @@
 </template>
 
 <script>
+import ContralLeftForm from '@/components/Header/ContralLeftForm.vue'
 import contralRightForm from '@/components/Header/ContralRightForm.vue';
 
 export default {
@@ -24,6 +27,7 @@ export default {
 		}
 	},
 	components: {
+		ContralLeftForm,
 		contralRightForm
 	}
 }

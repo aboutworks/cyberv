@@ -15,7 +15,7 @@ export default{
 	background-image: url('@/statics/svgs/left.svg');
 	height:2rem;
 	background-repeat: no-repeat;
-	background-position: right;
-}
+	background-position: left;
+} 
 
 </style>
